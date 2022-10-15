@@ -18,7 +18,7 @@ def google_search(search_term, api_key, cse_id, **kwargs):
     return res['items']
 
 results = google_search(
-    'abes site:*.fr', my_api_key, my_cse_id, num=10)
+    'site:*.fr', my_api_key, my_cse_id, num=10)
 
 for completedomain in results:
     domain=list(completedomain['displayLink'].split('.'))
